@@ -1,5 +1,6 @@
 Modification of the standard snake game.
 
+![game_over](https://github.com/Posurok/Badgers_and_Cats/assets/157339671/c982f0eb-02a8-4e6d-b5c6-af8b17bd8c6d)
 ![image](https://github.com/Posurok/Badgers_and_Cats/blob/master2/images/screen.jpg?raw=true)
 
 Differences compared to the original assignment:
@@ -35,4 +36,4 @@ objects and cats is randomized.
 If you want to change this mechanic, you need to delete the block
 (see comments in the code).
 
-![game_over](https://github.com/Posurok/Badgers_and_Cats/assets/157339671/c982f0eb-02a8-4e6d-b5c6-af8b17bd8c6d)
+![image](https://github.com/Posurok/Badgers_and_Cats/blob/master2/images/screen.jpg?raw=true)
