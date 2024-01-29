@@ -7,12 +7,10 @@ Differences compared to the original assignment:
 - Added 4 types of different "apples"
   (the number of objects depends on the game's speed):
   
-    Green Cat - 30 points and increases speed by "1".
-    Red Cat - 20 points and increases speed by "1".
-  
-    Orange Cat - 10 points and increases speed by "1".
-  
-    Black-and-White Cat - Slows down speed by "1", increases score bonus by 1.
+        Green Cat - 30 points and increases speed by "1".
+        Red Cat - 20 points and increases speed by "1".  
+        Orange Cat - 10 points and increases speed by "1".
+        Black-and-White Cat - Slows down speed by "1", increases score bonus by 1.
   
 - Added friendly Badger object - 4 pcs., eating a friendly object reduces
   the "snake" by 3 sections.
