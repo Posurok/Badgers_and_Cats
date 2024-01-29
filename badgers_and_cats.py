@@ -154,6 +154,8 @@ class Snake(GameObject):
                         and event.key == pygame.K_SPACE):
                     waiting_for_space = False
 
+
+
     def draw(self, surface):
         """Rendering the snake."""
         for i, position in enumerate(self.positions[:-1]):
@@ -399,8 +401,8 @@ def main():
 
         if snake.positions[0] in snake.positions[1:]:
             snake.reset(screen)
-            game_speed = 3
             score = 0
+            game_speed = 3
             apples = [Apple() for _ in range(1)]
 
         # Checking if the black cat object is eaten.
