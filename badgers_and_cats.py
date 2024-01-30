@@ -131,12 +131,9 @@ class Snake(GameObject):
         x, y = self.direction
         new = (round(((cur[0] + (x * GRID_SIZE)) % SCREEN_WIDTH)),
                round((cur[1] + (y * GRID_SIZE)) % SCREEN_HEIGHT))
-        if new in self.positions[2:]:
-            self.reset(screen)
-        else:
-            self.positions.insert(0, new)
-            while len(self.positions) > (self.length + 1):
-                self.positions.pop()
+        self.positions.insert(0, new)
+        while len(self.positions) > (self.length + 1):
+            self.positions.pop()
 
     def reset(self, surface):
         """Game reset."""
