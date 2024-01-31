@@ -49,6 +49,9 @@ GRID_SIZE = 40
 GRID_WIDTH = SCREEN_WIDTH // GRID_SIZE
 GRID_HEIGHT = SCREEN_HEIGHT // GRID_SIZE
 
+# Константы для начальной позиции змейки:
+START_POSITION = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
+
 # Movement directions.
 UP = (0, -1)
 DOWN = (0, 1)
@@ -178,7 +181,7 @@ class Apple(GameObject):
     rendering cats of 3 different colors.
     """
 
-    def __init__(self, position=(640, 480)):
+    def __init__(self, position=START_POSITION):
         self.color = ['orange', 'red', 'green']
         body_color = choice(self.color)
         super().__init__(position, body_color)
@@ -208,7 +211,7 @@ class Badger(GameObject):
     moving friendly objects.
     """
 
-    def __init__(self, position=(640, 480), body_color=APPLE_COLOR):
+    def __init__(self, position=START_POSITION, body_color=APPLE_COLOR):
         position = self.randomize_position()
         super().__init__(position, body_color)
         self.directions = [UP, DOWN, LEFT, RIGHT]
@@ -239,7 +242,7 @@ class BlackCat(Badger):
     moving a black-and-white cat.
     """
 
-    def __init__(self, position=(640, 480), body_color=APPLE_COLOR):
+    def __init__(self, position=START_POSITION, body_color=APPLE_COLOR):
         super().__init__(position, body_color)
 
     def draw(self, surface):
