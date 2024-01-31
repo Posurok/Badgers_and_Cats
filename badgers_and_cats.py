@@ -211,7 +211,7 @@ class Badger(GameObject):
     moving friendly objects.
     """
 
-    def __init__(self, position=START_POSITION, body_color=APPLE_COLOR):
+    def __init__(self, position=(320, 240), body_color=APPLE_COLOR):
         position = self.randomize_position()
         super().__init__(position, body_color)
         self.directions = [UP, DOWN, LEFT, RIGHT]
